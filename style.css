@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #E4EFE9;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(69,68,69,1);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(69,68,69,1);
+    box-shadow: 5px 6px 5px 0px rgba(69,68,69,1);
+}
+
+.top-todo {
+    text-align: center;   
+    padding-bottom: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #4E65FF;
+    background: linear-gradient(65deg, #4E65FF, #92EFFD)
+}
+
+.top-todo-title {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-size: 40px;
+}
+
+.taskError {
+    color: #4E65FF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.top-todo-task, .top-todo-btn {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.top-todo-task {
+    width: 70%;
+    font-size: 15px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.top-todo-btn {
+    width: 70px;
+}
+
+.top-todo-btn, .popupCompletBtn, .popupDeleteBtn {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    color: #764BA2;
+}
+
+.top-todo-btn:hover {
+    background-color: #764BA2;
+    color: #fff;
+}
+
+.tasksList-todo {
+    padding-bottom: 20px;
+}
+
+.tasksList-todo-title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #764BA2;
+}
+
+ul li {
+    font-family: 'Delicious Handrawn', cursive;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+ul li button {
+    border: none;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+    color: #11998E;
+}
+
+ul li button:hover {
+    color: #FE90AF;
+}
+
+.completed {
+    font-size: 15px;
+    color: #b3dded;
+    text-decoration: line-through;
+}
+
+.popup {
+    visibility: hidden;
+    background-color: #596164;
+    width: 1000px;
+    border-radius: 5px;
+    color: #E4EFE9;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.popupTxt {
+    padding-top: 10px;
+}
+
+.popupTask {
+    width: 80%;
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.popupTask, .popupCompletBtn, .popupDeleteBtn {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.popupCompletBtn, .popupDeleteBtn {
+    text-transform: uppercase;
+    width: 160px;
+    margin: 0 30px;
+}
+
+

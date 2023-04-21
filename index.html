@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista todo</title>
+    <script src="https://kit.fontawesome.com/1aa683c575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top-todo">
+            <h1 class="top-todo-title">TODO LIST</h1>
+            <input type="text" class="top-todo-task" placeholder="Wpisz treść zadania...">
+            <button class="top-todo-btn">ADD</button>
+        </div>
+
+        <div class="tasksList-todo">
+            <h2 class="tasksList-todo-title">LISTA ZADAŃ:</h2>
+            <p class="taskError">Brak zadań na liście</p>
+            
+           <ul>
+            <!--
+                <li>Wypić kawę
+                    <div class="tools">
+                        <button class="complet"><i class="fa-solid fa-check"></i></button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+
+                <li>Zjeść śniadanie
+                    <div class="tools">
+                        <button class="complet"><i class="fa-solid fa-check"></i></button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                
+                <li>Umyć okna
+                    <div class="tools">
+                        <button class="complet"><i class="fa-solid fa-check"></i></button>
+                        <button class="edit">EDIT</button>
+                        <button class="delete"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup">
+        <h2>Edytuj zadanie:</h2>
+        <p class="popupTxt"></p>
+        <input type="text" class="popupTask" placeholder="Wprowadź nową treść zadania...">
+        <div>
+            <button class="popupCompletBtn">zatwierdź</button>
+            <button class="popupDeleteBtn">anuluj</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
